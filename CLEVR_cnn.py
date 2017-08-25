@@ -94,7 +94,7 @@ def serialize_examples(question_file, dictionary):
       update_progress(i, num_questions, 'Parsing example')
   update_progress(num_questions, num_questions, 'Parsing example')
 
-  print('Creating answer dictionary...', end=' ')
+  #print('Creating answer dictionary...', end=' ')
   examples = [[dictionary[word.lower()] for word in q] for q in questions]
   labels = []
   answer_dict = {}
