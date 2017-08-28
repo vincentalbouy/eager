@@ -459,7 +459,7 @@ def main(embedding):
   # name = filename_queue.dequeue()
 
   id_to_label = {}
-  with open(os.path.join('data', 'id_to_human.json')) as file:
+  with open(os.path.join('id_to_human.json')) as file:
     id_to_label = json.load(file)
 
   extract_pretrained_weights('data/resnet_v1_101.ckpt')
